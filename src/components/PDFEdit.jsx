@@ -4,11 +4,12 @@ import {
   Button,
   Container,
   Flex,
-  Grid,
+
   Input,
   Stack,
   Text,
 } from '@chakra-ui/react';
+import AdvertisementBanner from './advertisement/AdvitersmentBanner';
 
 const PDFEdit = () => {
   const [file, setFile] = useState(null);
@@ -44,6 +45,7 @@ const PDFEdit = () => {
         w="100%"
         maxW="md"
       >
+        <AdvertisementBanner />
         <Stack spacing={6} w="100%">
           {/* Upload component */}
           <Box
